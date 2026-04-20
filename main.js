@@ -17,9 +17,10 @@ $(document).ready(function() {
       const h = String(Math.floor(elapsedTime / 3600000)).padStart(2, '0');
       const m = String(Math.floor((elapsedTime % 3600000) / 60000)).padStart(2, '0');
       const s = String(Math.floor((elapsedTime % 60000) / 1000)).padStart(2, '0');
+      const ms = String(Math.floor((elapsedTime % 1000) / 10)).padStart(2, '0');
 
       // 3. 表示を更新
-      $('#time').text(`${h}:${m}:${s}`);
+      $('#time').text(`${h}:${m}:${s}.${ms}`);
     }, 10);
   });
 

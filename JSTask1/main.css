@@ -11,23 +11,26 @@ body{
   font-family: monospace;
 }
 
+/* 基本のボタン */
 .control {
   padding: 10px 20px;
   font-size: 16px;
   border: none;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #007bff; /* 青色 */
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.control:hover {
+/* ホバー */
+.control:enabled:hover {
   background-color: #0056b3;
 }
 
+/* 無効化 */
 .control:disabled {
-  background-color: #cccccc;
+  background-color: #ccc !important;
   cursor: not-allowed;
   opacity: 0.6;
 }

@@ -12,3 +12,18 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
+/* ボタン共通のスタイル（見た目を整える） */
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 1px solid #333;
+    border-radius: 10px; /* 角を少し丸く */
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* ACボタンと＝ボタンを横長にする */
+.span-two {
+    grid-column: span 2; /* 2列分の幅を占有する */
+}

@@ -28,7 +28,7 @@
     padding: 10px;
 }
 
-/* ボタン共通のスタイル（見た目を整える） */
+/* ボタン共通のスタイル */
 .btn {
     padding: 7px;
     font-size: 1.2rem;
@@ -41,5 +41,5 @@
 
 /* ACボタンと＝ボタンを横長にする */
 .span-two {
-    grid-column: span 2; /* 2列分の幅を占有する */
+    grid-column: span 2; 
 }

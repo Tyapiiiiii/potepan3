@@ -7,14 +7,28 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.buttons {
+#display {
+    grid-column: span 4; /* 4列分ぶち抜き */
+    width: 100%;       /* 幅いっぱい */
+    box-sizing: border-box; /* パディングを含めた幅計算 */
+    background-color: #333;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
 /* ボタン共通のスタイル（見た目を整える） */
-button {
+btn {
     padding: 15px;
     font-size: 1.2rem;
     border: 1px solid #333;
